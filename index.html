@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,13 @@
   <title>Multiverso — Rick and Morty</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
+
 <body>
   <header class="site-header">
     <a class="brand" href="#" aria-label="Multiverso, início">
@@ -25,15 +29,21 @@
       <div class="hero-copy">
         <p class="eyebrow"><span class="live-dot"></span> ACESSO AO MULTIVERSO</p>
         <h1>Mil mundos.<br><span>Personagens</span><br>inesquecíveis.</h1>
-        <p class="hero-description">Entre em uma dimensão cheia de criaturas estranhas, aventuras improváveis e histórias que atravessam o espaço-tempo.</p>
-        <a class="primary-button" href="#personagens">Descobrir personagens <span aria-hidden="true">↓</span></a>
-        <div class="hero-note"><span class="note-icon">✳</span><span>Dados carregados em tempo real<br><strong>via Rick and Morty API</strong></span></div>
+        <p class="hero-description">Entre em uma dimensão cheia de criaturas estranhas, aventuras improváveis e
+          histórias que atravessam o espaço-tempo.</p>
       </div>
       <div class="hero-art" aria-label="Ilustração temática de Rick and Morty">
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-        <div class="planet planet-large"></div><div class="planet planet-small"></div>
-        <div class="star star-one">✦</div><div class="star star-two">✧</div><div class="star star-three">✦</div>
-        <div class="portal"><div class="portal-inner"></div><div class="portal-core">R&M</div></div>
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="planet planet-large"></div>
+        <div class="planet planet-small"></div>
+        <div class="star star-one">✦</div>
+        <div class="star star-two">✧</div>
+        <div class="star star-three">✦</div>
+        <div class="portal">
+          <div class="portal-inner"></div>
+          <div class="portal-core">R&M</div>
+        </div>
         <div class="art-label label-top">DIMENSÃO C-137</div>
         <div class="art-label label-bottom">NÃO EXISTE VOLTA FÁCIL</div>
       </div>
@@ -47,8 +57,14 @@
 
     <section class="characters-section" id="personagens">
       <div class="section-heading">
-        <div><p class="eyebrow">ARQUIVO INTERDIMENSIONAL</p><h2>Conheça a tripulação<span>.</span></h2><p class="section-description">Personagens buscados diretamente da API. Quem sabe o que você vai encontrar?</p></div>
-        <div class="search-wrap"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Buscar personagem..." aria-label="Buscar personagem"></div>
+        <div>
+          <p class="eyebrow">ARQUIVO INTERDIMENSIONAL</p>
+          <h2>Conheça a tripulação<span>.</span></h2>
+          <p class="section-description">Personagens buscados diretamente da API. Quem sabe o que você vai encontrar?
+          </p>
+        </div>
+        <div class="search-wrap"><span aria-hidden="true">⌕</span><input id="searchInput" type="search"
+            placeholder="Buscar personagem..." aria-label="Buscar personagem"></div>
       </div>
       <div class="filters" aria-label="Filtros de status">
         <button class="filter active" data-status="all">Todos</button>
@@ -58,12 +74,23 @@
       </div>
       <p class="results-line" id="resultsLine">Preparando o portal...</p>
       <div class="character-grid" id="characterGrid" aria-live="polite"></div>
-      <div class="loading-state" id="loadingState"><div class="spinner"></div><p>Buscando dados em outra dimensão...</p></div>
-      <div class="error-state" id="errorState" hidden><p>O portal não respondeu desta vez.</p><button class="primary-button" id="retryButton">Tentar novamente ↻</button></div>
-      <div class="load-more-wrap"><button id="loadMoreButton" class="secondary-button" hidden>Carregar mais personagens <span>＋</span></button></div>
+      <div class="loading-state" id="loadingState">
+        <div class="spinner"></div>
+        <p>Buscando dados em outra dimensão...</p>
+      </div>
+      <div class="error-state" id="errorState" hidden>
+        <p>O portal não respondeu desta vez.</p><button class="primary-button" id="retryButton">Tentar novamente
+          ↻</button>
+      </div>
+      <div class="load-more-wrap"><button id="loadMoreButton" class="secondary-button" hidden>Carregar mais personagens
+          <span>＋</span></button></div>
     </section>
   </main>
 
-  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">M<span>✦</span></span><span>MULTIVERSO<small>UM GUIA DE PERSONAGENS</small></span></a><p>Projeto acadêmico • HTML, CSS e JavaScript</p><p>Dados: <a href="https://rickandmortyapi.com/" target="_blank" rel="noreferrer">The Rick and Morty API ↗</a></p></footer>
+  <footer><a class="brand footer-brand" href="#"><span
+        class="brand-mark">M<span>✦</span></span><span>MULTIVERSO<small>UM GUIA DE PERSONAGENS</small></span></a>
+    <p>Dados: <a href="https://rickandmortyapi.com/" target="_blank" rel="noreferrer">The Rick and Morty API ↗</a></p>
+  </footer>
 </body>
+
 </html>
